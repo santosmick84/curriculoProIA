@@ -8,6 +8,7 @@ from models import Curriculo, Analise
 from db import init_db, get_session
 from prompts import build_prompt
 from dotenv import load_dotenv
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Carrega variáveis de ambiente
 openai.api_key = os.getenv("OPENAI_API_KEY")
