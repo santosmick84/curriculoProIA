@@ -1,0 +1,8 @@
+# Monte seus templates de prompt para OpenAI aqui
+def build_prompt(texto_cv: str, tipo_analise: str) -> str:
+    base = (
+        f"Você é um avaliador de currículos experiente. "
+        f"Faça uma análise {tipo_analise} do seguinte texto de currículo:\n\n{texto_cv}\n"
+        "Responda em JSON com campos: nota_geral, pontos_fortes, oportunidades_melhoria, correcoes_portugues, resumo_profissional."
+    )
+    return base
