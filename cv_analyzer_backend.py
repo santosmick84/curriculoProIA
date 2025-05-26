@@ -1,3 +1,5 @@
+from dotenv import load_dotenv
+load_dotenv()
 import os
 import json
 from fastapi import FastAPI, HTTPException, Depends
